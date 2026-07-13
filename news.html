@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thank You - Radz Designs</title>
+    <title>News | Radz Designs</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <header>
+    <header>
             <nav>
                     <div class="navbar">
                         <div class="logo">
@@ -24,7 +24,7 @@
                                 <div class="dropdown-menu">
                                     <a href="website-consulting.html" data-tooltip="Explore our website consulting services">Website Consulting & Design</a>
                                     <a href="cx.html" data-tooltip="Explore our customer experience services">CX/EX Strategy Advisory</a>
-                           <!--     <a href="new-product.html" data-tooltip="Explore our new product market fit services">New Product-Market Fit Analysis</a>
+                    <!--         <a href="new-product.html" data-tooltip="Explore our new product market fit services">New Product-Market Fit Analysis</a>
                                     <a href="rd.html" data-tooltip="Explore our R & D partnership model">R & D Partnership Model-Process & Frameworks</a>
                                     <a href="building-ai.html" data-tooltip="Explore our AI agents services">Building AI Agents & Assistants</a>. -->
                                 </div>
@@ -42,24 +42,98 @@
                 </div>
             </nav>
         </header>
-    <div class="container">
-        <section id="thank-you">
-            <div class="thankyou-container">
-                <div class="thankyou-icon">✓</div>
-                <h2 class="section-heading">Thank You!</h2>
-                <p>We Received Your Message.</p> 
-                <p>We'll Review Your Business Proposal and Get Back to You within 1-2 business days.</p>
-                <button class="primary-cta-button1 home-btn" onclick="window.location.href='index.html'">Back to Home</button>
+         <button class="mobile-sticky-cta talk-btn" data-tooltip="Contact Us"></button>
+
+
+        <section id="news-hero">
+            <div class="news-hero-container">
+                <h4 class="section-heading-top">Insights</h4>
+                <h1 class="page-heading">News & Events</h1>
+                <p class="page-subheading">Updates from Radz Designs, industry trends worth knowing, and moments from the field.</p>
             </div>
         </section>
-        <div id="site-tooltip"></div>
 
-   <footer>
+        <section id="announcements">
+            <div class="news-section-container">
+                <div class="news-section-headline">
+                    <h4 class="section-heading-top">Announcements</h4>
+                    <h2 class="section-heading">From Radz Designs</h2>
+                </div>
+                <div class="news-card-grid">
+                    <div class="news-card">
+                        <span class="news-date">July 2026</span>
+                        <h3>Radz Designs Is Live</h3>
+                        <p>We've officially launched our new website, bringing together our CX/EX strategy and web consulting services under one roof.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="industry-news">
+            <div class="news-section-container">
+                <div class="news-section-headline">
+                    <h4 class="section-heading-top">Industry News</h4>
+                    <h2 class="section-heading">Worth Knowing</h2>
+                </div>
+                <div class="news-card-grid">
+                    <div class="news-card">
+                        <span class="news-date">December 2025</span>
+                        <div class="news-content">
+                            <h3>Industry Update: Why Customer Experience Is Becoming a Boardroom Priority</h3>
+                            <p>Customer Experience (CX) is undergoing a fundamental structural evolution in 2026. 
+                                No longer confined to a reactive support silo, CX is emerging as a critical horizontal 
+                                business strategy. Forward-thinking leaders are now dismantling functional barriers to integrate 
+                                CX metrics directly with core financial drivers, including revenue growth, customer retention, 
+                                and employee experience (EX).  CX Today+ 2
+
+                                <p>By unifying data streams—such as sentiment analysis, behavioral telemetry, and operational 
+                                    output—enterprises are moving away from surface-level satisfaction tracking toward a 
+                                    comprehensive management model. This transition allows organizations to treat customer 
+                                    interactions as real-time growth levers rather than just cost centers, proving the commercial
+                                    impact of service quality on the bottom line.</p>
+                                <a class="source-text" href="https://www.medallia.com/blog/15-predictions-redefine-customer-experience/" target="_blank">Source: Medallia - 15 Predictions That Will Redefine Customer Experience 
+                                        in 2026</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="events">
+            <div class="news-section-container">
+                <div class="news-section-headline">
+                    <h4 class="section-heading-top">Events</h4>
+                    <h2 class="section-heading">Where We Show Up</h2>
+                </div>
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="assets/images/ktx.png" alt="KTX Global 2026">
+                        <div class="image-text-container">
+                            <p class="image-text">Coming Soon</p>
+                        </div>
+                    </div>
+                    <div class="event-content">
+                        <span class="news-date">July 27, 2026 · Calicut</span>
+                        <h3>KTX Global 2026</h3>
+                        <p>Presenting our demo portfolio and CX/EX framework to founders and industry leaders in Calicut.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+          <footer>
             <div class="footer-container">
                <div class="menu-container"> 
                     <a href="index.html">Home</a>
                     <a href="about.html">About Us</a>
-                    <div class="dropdown-menu">
+                    <div class="dropdown">
+                        <a href="#"data-tooltip="See all our services">Services</a>
+                        <div class="dropdown-menu">
                             <a href="website-consulting.html" data-tooltip="Explore our website consulting services">Website Consulting & Design</a>
                             <a href="cx.html" data-tooltip="Explore our customer experience services">CX/EX Strategy Advisory</a>
                 <!--        <a href="new-product.html" data-tooltip="Explore our new product market fit services">New Product-Market Fit Analysis</a>
@@ -71,9 +145,9 @@
                         <a href="#" data-tooltip="See our blogs and latest news">Insights</a>
                         <div class="dropdown-menu">
                             <a href="news.html" data-tooltip="Learn the latest news">News & Events</a>
-                            <!--   <a href="blog.html" data-tooltip="See our blogs">Blogs</a> -->
-                        </div>    
-                    </div> 
+                        <!--   <a href="blog.html" data-tooltip="See our blogs">Blogs</a> -->
+                    </div>    
+                </div> 
                     <a href="contact.html">Contact</a>
                </div>
                <div class="business-container">

@@ -167,6 +167,11 @@ document.querySelectorAll('.home-btn').forEach(button=>{
     });
 });
 
+document.querySelectorAll('.test-btn').forEach(button=>{
+  button.addEventListener('click', ()=>{
+    window.location.href='../../../contact.html#contact';
+    });
+});
 const tooltip = document.getElementById('site-tooltip');
 document.addEventListener('mouseover', (e) => {
     // STOP the function if the screen is mobile (less than 768px)

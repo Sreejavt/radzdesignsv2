@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>News | Radz Designs</title>
+    <title>Blog Section | Radz Designs</title>
+    <title>Blog | Radz</title>
+     <meta name="description" content="Insights on customer experience, journey design, retention, behavioural psychology, and revenue growth.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,7 +15,7 @@
                         <div class="logo">
                             <a href="index.html">
                                 <img src="assets/images/logo.svg" alt="Radz-logo">
-                            </a>    
+                            </a>       
                         </div>
                         <button class="hamburger">☰</button>                     
                         <div class="nav-links">
@@ -24,7 +26,7 @@
                                 <div class="dropdown-menu">
                                     <a href="website-consulting.html" data-tooltip="Explore our website consulting services">Website Consulting & Design</a>
                                     <a href="cx.html" data-tooltip="Explore our customer experience services">CX/EX Strategy Advisory</a>
-                    <!--         <a href="new-product.html" data-tooltip="Explore our new product market fit services">New Product-Market Fit Analysis</a>
+                    <!--            <a href="new-product.html" data-tooltip="Explore our new product market fit services">New Product-Market Fit Analysis</a>
                                     <a href="rd.html" data-tooltip="Explore our R & D partnership model">R & D Partnership Model-Process & Frameworks</a>
                                     <a href="building-ai.html" data-tooltip="Explore our AI agents services">Building AI Agents & Assistants</a>. -->
                                 </div>
@@ -42,91 +44,70 @@
                 </div>
             </nav>
         </header>
-         <button class="mobile-sticky-cta talk-btn" data-tooltip="Contact Us"></button>
+        <button class="mobile-sticky-cta talk-btn" data-tooltip="Contact Us"></button>
 
-
-        <section id="news-hero">
-            <div class="news-hero-container">
+        <section id="blog-hero">
+            <div class="blog-hero-container">
                 <h4 class="section-heading-top">Insights</h4>
-                <h1 class="page-heading">News & Events</h1>
-                <p class="page-subheading">Updates from Radz Designs, industry trends worth knowing, and moments from the field.</p>
+                <h1 class="page-heading">Blog</h1>
+                <p class="page-subheading">Thoughts on customer experience, employee experience, and building systems that scale.</p>
             </div>
         </section>
 
-        <section id="announcements">
-            <div class="news-section-container">
-                <div class="news-section-headline">
-                    <h4 class="section-heading-top">Announcements</h4>
-                    <h2 class="section-heading">From Radz Designs</h2>
-                </div>
-                <div class="news-card-grid">
-                    <div class="news-card">
-                        <span class="news-date">July 2026</span>
-                        <h3>Radz Designs Is Live</h3>
-                        <p>We've officially launched our new website, bringing together our CX/EX strategy and web consulting services under one roof.</p>
+        <section id="featured-article">
+            <div class="featured-article-container">
+                <a href="assets/blogs/why-happy-customers-still-quit-your-product.html" class="featured-card">
+                    <div class="featured-image">
+                        <p class="image-text">Featured</p>
+                        <img src="assets/images/blog_1.png" alt="Featured article">
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="industry-news">
-            <div class="news-section-container">
-                <div class="news-section-headline">
-                    <h4 class="section-heading-top">Industry News</h4>
-                    <h2 class="section-heading">Worth Knowing</h2>
-                </div>
-                <div class="news-card-grid">
-                    <div class="news-card">
-                        <span class="news-date">December 2025</span>
-                        <div class="news-content">
-                            <h3>Industry Update: Why Customer Experience Is Becoming a Boardroom Priority</h3>
-                            <p>Customer Experience (CX) is undergoing a fundamental structural evolution in 2026. 
-                                No longer confined to a reactive support silo, CX is emerging as a critical horizontal 
-                                business strategy. Forward-thinking leaders are now dismantling functional barriers to integrate 
-                                CX metrics directly with core financial drivers, including revenue growth, customer retention, 
-                                and employee experience (EX).  CX Today+ 2
-
-                                <p>By unifying data streams—such as sentiment analysis, behavioral telemetry, and operational 
-                                    output—enterprises are moving away from surface-level satisfaction tracking toward a 
-                                    comprehensive management model. This transition allows organizations to treat customer 
-                                    interactions as real-time growth levers rather than just cost centers, proving the commercial
-                                    impact of service quality on the bottom line.</p>
-                                <a class="source-text" href="https://www.medallia.com/blog/15-predictions-redefine-customer-experience/" target="_blank">Source: Medallia - 15 Predictions That Will Redefine Customer Experience 
-                                        in 2026</a>
-                            </div>
+                    <div class="featured-content">
+                        <span class="article-category">Customer Experience</span>
+                        <h2>Why "Happy" Customers Still Quit Your Product</h2>
+                        <p>High NPS and CSAT scores don't guarantee customer retention. Discover why sentiment metrics miss 
+                            the structural friction that drives churn—and what to measure instead.</p>
+                        <span class="article-date">July 2026 <span class="strong"> .</span> 5 min read</span>
+                        <span class="read-article-btn">Read More →</span>
                     </div>
-                </div>
+                </a>
             </div>
         </section>
 
-        <section id="events">
-            <div class="news-section-container">
-                <div class="news-section-headline">
-                    <h4 class="section-heading-top">Events</h4>
-                    <h2 class="section-heading">Where We Show Up</h2>
+        <section id="latest-articles" style="display: none;">
+            <div class="latest-articles-container">
+                <div class="latest-articles-headline">
+                    <h4 class="section-heading-top">More Reading</h4>
+                    <h2 class="section-heading">Latest Articles</h2>
                 </div>
-                <div class="event-card">
-                    <div class="event-image">
-                        <img src="assets/images/ktx.png" alt="KTX Global 2026">
-                        <div class="image-text-container">
-                            <p class="image-text">Coming Soon</p>
+                <div class="article-grid">
+                    <a href="#" class="article-card">
+                        <div class="article-thumbnail">
+                            <img src="assets/images/article-thumb.jpg" alt="Article thumbnail">
                         </div>
-                    </div>
-                    <div class="event-content">
-                        <span class="news-date">Coming Soon· Calicut</span>
-                        <h3>KTX Global 2026</h3>
-                        <p>Presenting our demo portfolio and CX/EX framework to founders and industry leaders in Calicut.</p>
-                    </div>
+                        <div class="article-card-content">
+                            <span class="article-category">Category</span>
+                            <span class="article-date">Date</span>
+                            <h3>Article title</h3>
+                            <p>Short excerpt.</p>
+                            <span class="read-more-link">Read More →</span>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
 
+        <section id="newsletter-cta">
+            <div class="newsletter-container">
+                <h2>Enjoyed the article?</h2>
+                <p>Subscribe for updates on new posts, or reach out if you're ready to talk.</p>
+                <div class="newsletter-form">
+                    <!-- Mailchimp embed form goes here -->
+                </div>
+                <a href="contact.html#contact" class="secondary-cta-button">Book an Inquiry</a>
+            </div>
+        </section>
 
-
-
-
-
-          <footer>
+        <footer>
             <div class="footer-container">
                <div class="menu-container"> 
                     <a href="index.html">Home</a>

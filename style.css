@@ -3306,9 +3306,17 @@ form button {
     background: #f2a13c;
     color: #1a1a1a;
 }
+#article-hero{
+    background-color: #eceaea;
+    padding-top: 30px;
+    border-radius: 12px;
+    padding-bottom: 50px;
+}
+
 .blog-container{
     max-width: 900px;
     margin:0 auto;
+    padding-bottom: 50px;
 }
 .blog-hero-container{
     display:flex;

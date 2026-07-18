@@ -175,8 +175,8 @@ document.querySelectorAll('.test-btn').forEach(button=>{
 const tooltip = document.getElementById('site-tooltip');
 document.addEventListener('mouseover', (e) => {
     // STOP the function if the screen is mobile (less than 768px)
-    if (window.innerWidth < 768) return;
-
+    if (window.innerWidth < 1024) return;
+    if (!window.matchMedia('(hover: hover)').matches) return;
     const target = e.target.closest('[data-tooltip]');
     if (target) {
         const message = target.getAttribute('data-tooltip');
@@ -184,7 +184,6 @@ document.addEventListener('mouseover', (e) => {
         tooltip.style.display = 'block';
     }
 });
-
 document.addEventListener('mousemove', (e) => {
     // Only move if the tooltip is actually visible
     if (tooltip.style.display === 'block') {

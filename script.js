@@ -225,10 +225,17 @@ faqItems.forEach((item) => {
 document.querySelectorAll('.segment-toggle').forEach((btn) => {
     btn.addEventListener('click', () => {
         const parent = btn.closest('.capability-segment');
-        parent.classList.toggle('active');
+        const isActive = parent.classList.contains('active');
+
+        document.querySelectorAll('.capability-segment.active').forEach((seg) => {
+            seg.classList.remove('active');
+        });
+
+        if (!isActive) {
+            parent.classList.add('active');
+        }
     });
 });
-
 const revealSections = document.querySelectorAll('section');
 
 const revealObserver = new IntersectionObserver((entries) => {

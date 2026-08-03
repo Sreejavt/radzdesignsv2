@@ -104,23 +104,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-    const dropdowns = document.querySelectorAll(".dropdown");
-    dropdowns.forEach((dropdown) => {
-        const trigger = dropdown.querySelector("a");
-        const subLinks = dropdown.querySelectorAll(".dropdown-menu a");
-        let dropdownHasActiveChild = false;
+const dropdowns = document.querySelectorAll(".dropdown");
+dropdowns.forEach((dropdown) => {
+    const trigger = dropdown.querySelector("a");
+    const subLinks = dropdown.querySelectorAll(".dropdown-menu a");
+    let dropdownHasActiveChild = false;
 
-        subLinks.forEach((subLink) => {
-            if (subLink.getAttribute("href") === currentPath) {
-                subLink.classList.add("active");
-                dropdownHasActiveChild = true;
-            }
-        });
+    subLinks.forEach((subLink) => {
+        const subHref = subLink.getAttribute("href");
 
-        if (dropdownHasActiveChild) {
-            trigger.classList.add("active");
+        if (subHref === currentPath) {
+            subLink.classList.add("active");
+            dropdownHasActiveChild = true;
+        }
+
+        // CX/EX sub-link should stay active on both cx.html and ex.html
+        if (subHref === "cx.html" && currentPath === "ex.html") {
+            subLink.classList.add("active");
+            dropdownHasActiveChild = true;
         }
     });
+
+    if (dropdownHasActiveChild) {
+        trigger.classList.add("active");
+    }
+});
 };
 
 setActiveNav();
@@ -160,7 +168,16 @@ document.querySelectorAll('.cx-learn-more-btn').forEach(button=>{
     window.location.href='cx.html#cx-intro';
     });
 });
-
+document.querySelectorAll('.ex-learn-more-btn').forEach(button=>{
+  button.addEventListener('click', ()=>{
+    window.location.href='ex.html#ex-intro';
+    });
+});
+document.querySelectorAll('.learn-more-ai-btn').forEach(button=>{
+  button.addEventListener('click', ()=>{
+    window.location.href='building-ai.html#ai-solutions';
+    });
+});
 document.querySelectorAll('.home-btn').forEach(button=>{
   button.addEventListener('click', ()=>{
     window.location.href='index.html';
@@ -198,15 +215,28 @@ document.addEventListener('mouseout', (e) => {
         tooltip.style.display = 'none';
     }
 });
+
 document.querySelectorAll('.what-is-cx, .why-cx').forEach((box) => {
-    const heading = box.querySelector('.subsection-heading');
-    heading.addEventListener('click', () => {
+    const heading1 = box.querySelector('.subsection-heading');
+    heading1.addEventListener('click', () => {
+        box.classList.toggle('active');
+    });
+});
+document.querySelectorAll('.what-is-ex, .why-ex').forEach((box) => {
+    const heading2 = box.querySelector('.subsection-heading');
+    heading2.addEventListener('click', () => {
         box.classList.toggle('active');
     });
 });
 document.querySelectorAll('.web-service-buyer, .web-service-reason').forEach((box) => {
     const subheading = box.querySelector('.subsection-subheading');
     subheading.addEventListener('click', () => {
+        box.classList.toggle('active');
+    });
+});
+document.querySelectorAll('.what-is-pmf, .why-pmf').forEach((box) => {
+    const heading3 = box.querySelector('.subsection-heading');
+    heading3.addEventListener('click', () => {
         box.classList.toggle('active');
     });
 });
@@ -236,6 +266,19 @@ document.querySelectorAll('.segment-toggle').forEach((btn) => {
         }
     });
 });
+function switchPmfStep(stepNumber) {
+  // Remove active classes from timeline triggers
+  const navItems = document.querySelectorAll('.pmf-nav-item');
+  navItems.forEach(item => item.classList.remove('active'));
+  
+  // Remove active classes from display panels
+  const panels = document.querySelectorAll('.pmf-panel');
+  panels.forEach(panel => panel.classList.remove('active'));
+  
+  // Activate selected elements
+  navItems[stepNumber - 1].classList.add('active');
+  document.getElementById('pmf-panel-' + stepNumber).classList.add('active');
+}
 const revealSections = document.querySelectorAll('section');
 
 const revealObserver = new IntersectionObserver((entries) => {
@@ -249,6 +292,7 @@ const revealObserver = new IntersectionObserver((entries) => {
 });
 
 revealSections.forEach((section) => revealObserver.observe(section));
+
 
 const form = document.querySelector('form');
 if(form){

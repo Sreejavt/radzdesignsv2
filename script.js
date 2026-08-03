@@ -178,6 +178,16 @@ document.querySelectorAll('.learn-more-ai-btn').forEach(button=>{
     window.location.href='building-ai.html#ai-solutions';
     });
 });
+document.querySelectorAll('.learn-more-new-product').forEach(button=>{
+  button.addEventListener('click', ()=>{
+    window.location.href='new-product.html#pmf-intro';
+    });
+});
+document.querySelectorAll('.learn-more-rd').forEach(button=>{
+  button.addEventListener('click', ()=>{
+    window.location.href='rd.html#rd-scope';
+    });
+});
 document.querySelectorAll('.home-btn').forEach(button=>{
   button.addEventListener('click', ()=>{
     window.location.href='index.html';

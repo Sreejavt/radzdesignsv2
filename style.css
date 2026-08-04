@@ -3501,7 +3501,7 @@ ul.blog-item-list li::before {
     }
 }
 #hero.building-ai-hero{
-    background-image: url('assets/images/building-ai-hero.png');
+    background-image: url('assets/images/building-ai-hero.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

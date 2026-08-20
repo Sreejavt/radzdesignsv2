@@ -5347,6 +5347,11 @@ ul.blog-item-list li::before {
     .research-logo-container{
         flex-wrap: wrap;
     }
+}
+@media (max-width: 853px){
+    .research-logo-container{
+        flex-wrap: wrap;
+    }
     .research-logo-container img{
         height: 120px;
         width: 120px;

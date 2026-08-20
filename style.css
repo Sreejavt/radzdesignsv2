@@ -5343,7 +5343,7 @@ ul.blog-item-list li::before {
         width: 100px;
     }
 }
-@media (max-width: 900px){
+@media (max-width: 912px){
     .research-logo-container{
         flex-wrap: wrap;
     }

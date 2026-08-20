@@ -5349,13 +5349,18 @@ ul.blog-item-list li::before {
     }
 }
 @media (max-width: 853px){
-    .research-logo-container{
+   .research-logo-container {
         flex-wrap: wrap;
         overflow-x: hidden;
+        gap: 20px;
+        padding: 25px 20px;
     }
-    .research-logo-container img{
-        height: 120px;
-        width: 120px;
+    .research-logo-container img {
+        height: 70px;
+        width: 70px;
+    }
+    .company {
+        padding: 14px 18px;
     }
 }
 

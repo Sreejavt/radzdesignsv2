@@ -7985,3 +7985,102 @@ ul.blog-item-list li::before {
         width: 100%;
     }
 }
+
+/* PRIVACY PAGE & TERMS PAGE */
+
+@media (max-width: 1024px) {
+    #who-we-are, #about-these-terms {
+    overflow-x: hidden;
+}
+#who-we-are p, #about-these-terms p,
+#who-we-are a, #about-these-terms a {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+    #who-we-are article, #about-these-terms article {
+        max-width: 90%;
+    }
+    #privacy-hero .page-heading, #terms-hero .page-heading {
+        font-size: 2rem;
+    }
+    #who-we-are .section-heading, #about-these-terms .section-heading {
+        font-size: 1.5rem;
+    }
+    #who-we-are .subsection-heading, #about-these-terms .subsection-heading {
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #who-we-are article, #about-these-terms article {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    #privacy-hero .section-heading-top, #terms-hero .section-heading-top {
+        font-size: 20px;
+    }
+    #privacy-hero .page-heading, #terms-hero .page-heading {
+        font-size: 1.6rem;
+    }
+    #who-we-are .section-heading, #about-these-terms .section-heading {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+    #who-we-are .section-subheading, #about-these-terms .section-subheading {
+        font-size: 0.95rem;
+        margin-bottom: 40px;
+    }
+    #who-we-are .subsection-heading, #about-these-terms .subsection-heading {
+        font-size: 1.05rem;
+        margin: 16px auto;
+    }
+    #who-we-are p, #about-these-terms p {
+        font-size: 0.95rem;
+        margin-bottom: 14px;
+    }
+    .info p, .cookies-tracking-tech-container p {
+        margin-bottom: 40px;
+    }
+    #who-we-are .service-audience-list, #about-these-terms .service-audience-list {
+        padding-left: 28px;
+        font-size: 0.95rem;
+    }
+    .info-we-collect-container,
+    .international-data-transfers-container,
+    .how-we-share-info-container,
+    .data-retention-container,
+    .your-rights-container,
+    .data-security-container,
+    .childrens-privacy-container,
+    .changes-policy-container,
+    .privacy-contact-container,
+    .cookies-tracking-tech-container,
+    .how-we-use-info-container {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    #who-we-are article, #about-these-terms article {
+        padding: 0 16px;
+    }
+    #privacy-hero .page-heading, #terms-hero .page-heading {
+        font-size: 1.35rem;
+    }
+    #privacy-hero .page-subheading, #terms-hero .page-subheading {
+        font-size: 0.9rem;
+    }
+    #who-we-are .section-heading, #about-these-terms .section-heading {
+        font-size: 1.15rem;
+    }
+    #who-we-are .subsection-heading, #about-these-terms .subsection-heading {
+        font-size: 1rem;
+    }
+    #who-we-are p, #about-these-terms p,
+    #who-we-are .service-audience-list, #about-these-terms .service-audience-list {
+        font-size: 0.9rem;
+    }
+    #who-we-are .service-audience-list, #about-these-terms .service-audience-list {
+        padding-left: 22px;
+    }
+}

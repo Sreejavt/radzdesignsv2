@@ -5090,6 +5090,91 @@ ul.blog-item-list li::before {
 #rd-final .primary-cta-button2{
     width:350px;
 }
+.privacy-hero-container, .terms-hero-container{
+    display:flex;
+    flex-direction: column;
+    gap: 8px;
+}
+#privacy-hero .section-heading-top, #terms-hero .section-heading-top{
+    color: #F2A625;
+    font-size: 24px;
+}
+#privacy-hero .page-heading, #terms-hero .page-heading{
+    color:#000;
+    text-align: center;
+}
+#privacy-hero .page-subheading, #terms-hero .page-subheading{
+    color:#3b3b3b;
+    text-align: center;
+}
+#who-we-are article, #about-these-terms article{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+#who-we-are .section-heading, #about-these-terms .section-heading{
+    color: #0356a4;
+    margin-bottom: 12px;
+    text-align: left;
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+}
+#who-we-are .section-subheading, #about-these-terms .section-subheading{
+    color: #333;
+    font-size:16px;
+    text-align: left;
+    line-height:1.8;
+    margin-bottom: 60px;
+    font-weight:400;
+}
+#who-we-are .subsection-heading, #about-these-terms .subsection-heading{
+    color: #3482cb;
+    margin: 20px auto;
+    text-align: left;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+}
+#who-we-are .service-audience-list, #about-these-terms .service-audience-list{
+    padding-left: 50px;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.8;
+}
+.info-we-collect-container{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+.info-we-collect-container,.international-data-transfers-container, .how-we-share-info-container, .data-retention-container, .your-rights-container,
+.data-security-container, .childrens-privacy-container, .changes-policy-container, .privacy-contact-container, .cookies-tracking-tech-container{
+    margin-bottom: 60px;
+}
+.info p, .cookies-tracking-tech-container p{
+    line-height: 1.8;
+    margin-bottom: 60px;
+}
+.how-we-use-info-container{
+    margin-bottom: 60px;
+}
+.your-rights-container a, .privacy-contact-container a, .terms-contact-container a{
+    color: #f19731;
+    text-decoration: none;
+    font-weight: 500;
+}
+.your-rights-container a:hover, .privacy-contact-container a:hover, .terms-contact-container a:hover{
+    text-decoration: underline;
+    font-weight: 600;
+}
+#who-we-are p, #about-these-terms p{
+    line-height: 1.8;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #333;
+}
+.about-radz-terms-container, .use-of-the-site-container, .inquiries-outreach-container, .scope-of-content, .intellectual-property-container,
+.third-party-tools-container, .disclaimer-warranty-container, .limitation-of-liability-container, .governing-law-container, .changes-terms-container,
+.terms-contact-container{
+    margin-bottom: 60px;
+}
 .hamburger.active {
   color: #d4af37; /* gold accent when open, adjust to match your palette */
 }

@@ -3468,7 +3468,7 @@ form button {
 }
 blockquote {
     position: relative;
-    padding-left: 20px; /* Make room for the absolute border */
+    padding-left: 20px; 
     font-style: italic;
     font-weight: 600;
     font-size: 21px;
@@ -3483,25 +3483,39 @@ blockquote::before {
     content: "";
     position: absolute;
     left: 0;
-    top: -10px;       /* Extends 10px above the text */
-    bottom: -10px;    /* Extends 10px below the text */
-    width: 3px;       /* Border thickness */
+    top: -10px;       
+    bottom: -10px;    
+    width: 3px;       
     background-color: #f2a13c;
+} 
+.second-blog{
+    line-height: 1.8;
+}
+ .second-blog-section2-bullet{
+    margin-bottom: 10px;
+}
+.blog-link{
+    text-decoration: none;
+    color: #09056b;
+    font-size: 0.9rem;
+}
+.blog-link:hover{
+    color:#f48b0b;
+    font-weight: 500;
 }
 .paragraph .subsection-heading{
     font-weight: 600;
     font-size: 20px;
 }
 ul.blog-item-list {
-    list-style-type: none;    /* Hides the default bullet points */
-    padding-left: 0;          /* Resets default padding */
+    list-style-type: none;   
+    padding-left: 0;          
     margin-bottom: 10px;      
 }
 
-/* Style the individual list items */
 ul.blog-item-list li {
-    position: relative;       /* Allows absolute positioning for the custom square */
-    padding-left: 30px;       /* Creates space for the new big square */
+    position: relative;      
+    padding-left: 30px;     
     font-family: sans-serif;  
     font-size: 16px;          
     line-height: 1.6;         
@@ -3509,18 +3523,16 @@ ul.blog-item-list li {
     color: #333333;           
 }
 
-/* Create the big transparent square */
 ul.blog-item-list li::before {
     content: "";
     position: absolute;
     left: 0;
-    top: 5px;                 /* Adjusts vertical alignment with the first line of text */
-       /* Square dimensions and style */
-    width: 14px;              /* Sets the size of the square */
+    top: 5px;                 
+    width: 14px;              
     height: 14px;             
-    background-color: transparent; /* Makes the inside transparent */
-    border: 2px solid #f2a13c;    /* Change this to your preferred border color */   
-    box-sizing: border-box;   /* Ensures the border is included in the size */
+    background-color: transparent; 
+    border: 2px solid #f2a13c;    
+    box-sizing: border-box;   
 }
 #blog-final{
     background-color: #1a1a1a;
@@ -3540,7 +3552,7 @@ ul.blog-item-list li::before {
 }
 .blog-cta .primary-cta-button1{
     border-radius: 12px;
-}
+} 
 @media (max-width: 800px) {
     .featured-card {
         flex-direction: column;

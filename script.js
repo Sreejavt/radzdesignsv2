@@ -295,14 +295,14 @@ const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('in-view');
+            revealObserver.unobserve(entry.target);
         }
     });
 }, {
-    threshold: 0.15
+    threshold: 0
 });
 
 revealSections.forEach((section) => revealObserver.observe(section));
-
 
 const form = document.querySelector('form');
 if(form){
